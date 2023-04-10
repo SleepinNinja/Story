@@ -1,0 +1,54 @@
+>git init: for making a local git repository
+
+>git status: to see the status of files being tracked,
+if the file is in red color then it is not being tracked,
+if it is in green color then the file is being tracked for
+changes.
+
+>git add file_name.extension: for adding file for tracking.
+The files goes to staging area. git add . for adding all the files.
+
+>git rm --cached -r file_name: for removing the files being added to 
+the staging area. For removing everything we write git rm --cached -r .
+>git commit -m 'message': for commit the files and writing 
+what are the changes that are made in this and previous file.
+
+>git log: for seeing the commits made.
+
+>The files are first present in the working directory, working 
+directory is the directory where git is initialised. Then on 
+adding the files using the add command the files goes into 
+staging area, the staging area is the area that is used for keeping 
+files that are commited and when we commit using the commit 
+command the files get transfered to the local repository.
+We can then use the command git checkout to roll back to the 
+previous version.
+
+>git checkout file_name.extension: for rolling back to previous version.
+
+>git diff file_name.extension: to see the difference between the previous
+current version.
+
+>git remote add origin repository_link: for creating a remote(online) repository
+and then commiting changes there, origin is the name of the remote we can name 
+it anything but a good practice is naming it as remote.
+
+>git clone repository_url: for cloning files from a git repository into our local file 
+system, the file will be copied to the current directory in CLI. We can use the git status 
+command on the cloned file to see the commit changes.
+
+>git push -u origin master: for pushing local repository to remote repository using 
+-u flag which links up remote and local repository. And we are pusing it towards a 
+remote called origin and we are pushing it to the branch master. Master branch is default
+branch or main branch for all the commits.
+
+>touch .gitignore creating this file for ignoring the things that we dont want to push into 
+github these can be passwords api keys etc. then start this file and 
+
+>git branch branch_name: for creating a branch in the main branch. Branches are created for 
+testing additional featues and it it works perfectly then we can merge the side branch into 
+the main branch.
+
+>git branch: to see all the branches.
+
+>git checkout branch_name: to swith branch to branch name
